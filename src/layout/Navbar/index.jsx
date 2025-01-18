@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router'
 import lawBalanceImg from '../../assets/images/law-balance.jpg'
 import Logo from '../../ui/Logo'
 
@@ -16,69 +17,75 @@ const Navbar = () => {
   return (
     <header className="header">
       <div className="header-navbar">
-        <div className="container d-flex flex-column align-items-center justify-content-between flex-lg-row">
+        <div className="container position-relative d-flex flex-column align-items-center justify-content-between flex-lg-row">
           <div className="logo d-flex align-items-center justify-content-center">
-            <Logo/>
+            <Logo />
           </div>
           <ul className="menu d-flex align-items-center m-0">
             <li>
-              <a href="#">Home</a>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <a href="#">Practice Areas</a>
-              <div className="other-links w-100 d-flex justify-content-between align-items-start">
+              <span>Practice Areas</span>
+              <div className="other-links w-100 d-flex justify-content-between align-items-start gap-4">
                 <div className="img-cover" style={style}></div>
                 <div className="sublinks">
                   <ul>
                     <li>
-                      <a href="#testimonials">Corporate And Commercial</a>
+                      <NavLink to="/123testimonials">
+                        Corporate And Commercial
+                      </NavLink>
                     </li>
                     <li>
-                      <a href="#team">
+                      <NavLink to="/123team">
                         Citizenship And 2nd Nationality Passport
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a href="#services">Licences And Approvals</a>
+                      <NavLink to="/123services">Licences And Approvals</NavLink>
                     </li>
                     <li>
-                      <a href="#our-skills">Legal Opinions And Research</a>
+                      <NavLink to="/123our-skills">
+                        Legal Opinions And Research
+                      </NavLink>
                     </li>
                     <li>
-                      <a href="#work-steps">Real Estate</a>
+                      <NavLink to="/123work-steps">Real Estate</NavLink>
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="#events">Intellectual Property Rights</a>
+                      <NavLink to="/123events">
+                        Intellectual Property Rights
+                      </NavLink>
                     </li>
                     <li>
-                      <a href="#pricing">Contracts And Agreements</a>
+                      <NavLink to="/123pricing">Contracts And Agreements</NavLink>
                     </li>
                     <li>
-                      <a href="#video">Civil Law And Litigation</a>
+                      <NavLink to="/123video">Civil Law And Litigation</NavLink>
                     </li>
                     <li>
-                      <a href="#stats">Labor Law And HR Services</a>
+                      <NavLink to="/123stats">Labor Law And HR Services</NavLink>
                     </li>
                   </ul>
                 </div>
               </div>
             </li>
             <li>
-              <a href="#">Our People</a>
+              <NavLink to="/People">Our People</NavLink>
             </li>
             <li>
-              <a href="#">Our Valued Clients</a>
+              <NavLink to="/Clients">Our Valued Clients</NavLink>
             </li>
             <li>
-              <a href="#">Testimonials</a>
+              <NavLink to="/Testimonials">Testimonials</NavLink>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <NavLink to="/Contact">Contact</NavLink>
             </li>
             <li>
-              <a href="#">E</a>
+              <NavLink to="/E">E</NavLink>
             </li>
           </ul>
         </div>

@@ -10,16 +10,18 @@ const Landing = () => {
   return (
     <div className="landing">
       <div className="info">
-        <h1>MG Law Firm</h1>
-        <p>
-          MG Law Firm is an Egyptian law firm that has been offering its
-          services for over 25 years to a diverse range of clients, including
-          local, international, and multinational corporations, large
-          enterprises, SMEs, and individuals. We deliver our legal services both
-          locally within Egypt and internationally, either directly or remotely,
-          tailored to meet the specific needs of our clients.
-        </p>
-        <button className="action">Find out more about our Firm</button>
+        <div className=" w-75 ms-auto">
+          <h1>MG Law Firm</h1>
+          <p>
+            MG Law Firm is an Egyptian law firm that has been offering its
+            services for over 25 years to a diverse range of clients, including
+            local, international, and multinational corporations, large
+            enterprises, SMEs, and individuals. We deliver our legal services
+            both locally within Egypt and internationally, either directly or
+            remotely, tailored to meet the specific needs of our clients.
+          </p>
+          <button className="action">Find out more about our Firm</button>
+        </div>
       </div>
       <div style={style}></div>
     </div>

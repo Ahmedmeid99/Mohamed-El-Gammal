@@ -21,6 +21,7 @@ const NavItem = ({ text, to, style }) => {
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const style = {
     backgroundImage: `url(${lawBalanceImg})`,
     backgroundSize: 'cover',
@@ -37,6 +38,10 @@ const Navbar = () => {
   }
   const closeMenu = () => {
     setIsMenuOpen(false)
+  }
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen((prev) => !prev)
   }
   return (
     <header className="header position-fixed top-0 w-100">
@@ -165,8 +170,9 @@ const Navbar = () => {
               <NavItem text="E" to="/E" />
             </li>
           </ul>
+
           <div
-          style={{right:isMenuOpen? '0':'-22rem'}}
+            style={{ right: isMenuOpen ? '0' : '-22rem' }}
             className={`sm-menu-container`}
           >
             <span
@@ -180,81 +186,79 @@ const Navbar = () => {
                 <NavItem text="Home" to="/" />
               </li>
               <li>
-                <span className=" position-relative d-block text-uppercase  pt-1 pb-1 ps-3 pe-3 ui-text-200">
+                <span
+                  onClick={toggleDropdown}
+                  className="nav-link  position-relative d-block text-uppercase  pt-1 pb-1 ps-3 pe-3 ui-text-200"
+                >
                   Practice Areas
                 </span>
-                <div className="other-links w-100 d-flex justify-content-between align-items-start gap-4">
-                  <div className="img-cover" style={style}></div>
-                  <div className="sublinks">
-                    <ul>
-                      <li>
-                        <NavItem
-                          text="Corporate And Commercial"
-                          to="/123testimonials"
-                          style="pt-3 pb-3"
-                        />
-                      </li>
-                      <li>
-                        <NavItem
-                          text="Citizenship And 2nd Nationality Passport"
-                          to="/123team"
-                          style="pt-3 pb-3"
-                        />
-                      </li>
-                      <li>
-                        <NavItem
-                          text="Licenses And Approvals"
-                          to="/123services"
-                          style="pt-3 pb-3"
-                        />
-                      </li>
-                      <li>
-                        <NavItem
-                          text="Legal Opinions And Research"
-                          to="/123our-skills"
-                          style="pt-3 pb-3"
-                        />
-                      </li>
-                      <li>
-                        <NavItem
-                          text="Real Estate"
-                          to="/123work-steps"
-                          style="pt-3 pb-3"
-                        />
-                      </li>
-                    </ul>
-                    <ul>
-                      <li>
-                        <NavItem
-                          text="Intellectual Property Rights"
-                          to="/123events"
-                          style="pt-3 pb-3"
-                        />
-                      </li>
-                      <li>
-                        <NavItem
-                          text="Contracts And Agreements"
-                          to="/123pricing"
-                          style="pt-3 pb-3"
-                        />
-                      </li>
-                      <li>
-                        <NavItem
-                          text="Civil Law And Litigation"
-                          to="/123video"
-                          style="pt-3 pb-3"
-                        />
-                      </li>
-                      <li>
-                        <NavItem
-                          text="Labor Law And HR Services"
-                          to="/123stats"
-                          style="pt-3 pb-3"
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                {isDropdownOpen && (
+                  <ul>
+                    <li>
+                      <NavItem
+                        text="Corporate And Commercial"
+                        to="/123testimonials"
+                        style="pt-3 pb-3 "
+                      />
+                    </li>
+                    <li>
+                      <NavItem
+                        text="Citizenship And 2nd Nationality Passport"
+                        to="/123team"
+                        style="pt-3 pb-3 "
+                      />
+                    </li>
+                    <li>
+                      <NavItem
+                        text="Licenses And Approvals"
+                        to="/123services"
+                        style="pt-3 pb-3 "
+                      />
+                    </li>
+                    <li>
+                      <NavItem
+                        text="Legal Opinions And Research"
+                        to="/123our-skills"
+                        style="pt-3 pb-3 "
+                      />
+                    </li>
+                    <li>
+                      <NavItem
+                        text="Real Estate"
+                        to="/123work-steps"
+                        style="pt-3 pb-3 "
+                      />
+                    </li>
+                    <li>
+                      <NavItem
+                        text="Intellectual Property Rights"
+                        to="/123events"
+                        style="pt-3 pb-3 "
+                      />
+                    </li>
+                    <li>
+                      <NavItem
+                        text="Contracts And Agreements"
+                        to="/123pricing"
+                        style="pt-3 pb-3 "
+                      />
+                    </li>
+                    <li>
+                      <NavItem
+                        text="Civil Law And Litigation"
+                        to="/123video"
+                        style="pt-3 pb-3 "
+                      />
+                    </li>
+                    <li>
+                      <NavItem
+                        text="Labor Law And HR Services"
+                        to="/123stats"
+                        style="pt-3 pb-3 "
+                      />
+                    </li>
+                  </ul>
+                )}
               </li>
               <li>
                 <NavItem text="Our People" to="/People" />

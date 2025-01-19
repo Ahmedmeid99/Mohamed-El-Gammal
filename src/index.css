@@ -213,7 +213,7 @@ header .menu li .active {
 }
 .sm-menu li a,
 .sm-menu li span {
-  font-size: 18px;
+  /* font-size: 18px; */
   font-weight: 600;
   /* for be in one line */
   max-width: 180px;

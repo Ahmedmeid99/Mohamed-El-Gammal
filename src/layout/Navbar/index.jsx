@@ -3,7 +3,7 @@ import { NavLink } from 'react-router'
 import lawBalanceImg from '../../assets/images/law-balance.jpg'
 import Logo from '../../ui/Logo'
 
-const NavItem = ({ text, to,style }) => {
+const NavItem = ({ text, to, style }) => {
   return (
     <NavLink
       className={`position-relative d-block overflow-x-hidden text-capitalize fs-6  pt-1 pb-1 ps-3 pe-3 ui-text-200 ${style}`}
@@ -38,7 +38,7 @@ const Navbar = () => {
               <NavItem text="Home" to="/" />
             </li>
             <li>
-              <span className=" position-relative d-block overflow-x-hidden text-capitalize fs-6  pt-1 pb-1 ps-3 pe-3 ui-text-200">
+              <span className=" position-relative d-block overflow-x-hidden text-capitalize fs-6  pt-4 pb-4 ps-3 pe-3 ui-text-200">
                 Practice Areas
               </span>
               <div className="other-links w-100 d-flex justify-content-between align-items-start gap-4">

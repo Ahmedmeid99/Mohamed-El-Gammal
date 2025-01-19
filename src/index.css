@@ -169,7 +169,7 @@ header .menu li .active {
 /* ----------------- */
 .other-links {
   position: absolute;
-  top: 78%;
+  top: 90%;
   left: 0;
   transform: translateY(30px);
   padding: 30px;

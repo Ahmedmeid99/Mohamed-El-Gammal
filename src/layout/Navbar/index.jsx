@@ -1,6 +1,18 @@
+/* eslint-disable react/prop-types */
 import { NavLink } from 'react-router'
 import lawBalanceImg from '../../assets/images/law-balance.jpg'
 import Logo from '../../ui/Logo'
+
+const NavItem = ({ text, to,style }) => {
+  return (
+    <NavLink
+      className={`position-relative d-block overflow-x-hidden text-capitalize fs-6  pt-1 pb-1 ps-3 pe-3 ui-text-200 ${style}`}
+      to={to}
+    >
+      {text}
+    </NavLink>
+  )
+}
 
 const Navbar = () => {
   const style = {
@@ -15,77 +27,107 @@ const Navbar = () => {
   }
 
   return (
-    <header className="header">
-      <div className="header-navbar">
-        <div className="container position-relative d-flex flex-column align-items-center justify-content-between flex-lg-row">
+    <header className="header position-fixed top-0 w-100">
+      <div className="header-navbar position-relative ui-bg-900  ui-index-99 ui-shadow-4">
+        <div className="container  position-relative d-flex flex-column align-items-center justify-content-between flex-lg-row">
           <div className="logo d-flex align-items-center justify-content-center">
             <Logo />
           </div>
           <ul className="menu d-flex align-items-center m-0">
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavItem text="Home" to="/" />
             </li>
             <li>
-              <span>Practice Areas</span>
+              <span className=" position-relative d-block overflow-x-hidden text-capitalize fs-6  pt-1 pb-1 ps-3 pe-3 ui-text-200">
+                Practice Areas
+              </span>
               <div className="other-links w-100 d-flex justify-content-between align-items-start gap-4">
                 <div className="img-cover" style={style}></div>
                 <div className="sublinks">
                   <ul>
                     <li>
-                      <NavLink to="/123testimonials">
-                        Corporate And Commercial
-                      </NavLink>
+                      <NavItem
+                        text="Corporate And Commercial"
+                        to="/123testimonials"
+                        style="pt-3 pb-3"
+                      />
                     </li>
                     <li>
-                      <NavLink to="/123team">
-                        Citizenship And 2nd Nationality Passport
-                      </NavLink>
+                      <NavItem
+                        text="Citizenship And 2nd Nationality Passport"
+                        to="/123team"
+                        style="pt-3 pb-3"
+                      />
                     </li>
                     <li>
-                      <NavLink to="/123services">Licences And Approvals</NavLink>
+                      <NavItem
+                        text="Licenses And Approvals"
+                        to="/123services"
+                        style="pt-3 pb-3"
+                      />
                     </li>
                     <li>
-                      <NavLink to="/123our-skills">
-                        Legal Opinions And Research
-                      </NavLink>
+                      <NavItem
+                        text="Legal Opinions And Research"
+                        to="/123our-skills"
+                        style="pt-3 pb-3"
+                      />
                     </li>
                     <li>
-                      <NavLink to="/123work-steps">Real Estate</NavLink>
+                      <NavItem
+                        text="Real Estate"
+                        to="/123work-steps"
+                        style="pt-3 pb-3"
+                      />
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <NavLink to="/123events">
-                        Intellectual Property Rights
-                      </NavLink>
+                      <NavItem
+                        text="Intellectual Property Rights"
+                        to="/123events"
+                        style="pt-3 pb-3"
+                      />
                     </li>
                     <li>
-                      <NavLink to="/123pricing">Contracts And Agreements</NavLink>
+                      <NavItem
+                        text="Contracts And Agreements"
+                        to="/123pricing"
+                        style="pt-3 pb-3"
+                      />
                     </li>
                     <li>
-                      <NavLink to="/123video">Civil Law And Litigation</NavLink>
+                      <NavItem
+                        text="Civil Law And Litigation"
+                        to="/123video"
+                        style="pt-3 pb-3"
+                      />
                     </li>
                     <li>
-                      <NavLink to="/123stats">Labor Law And HR Services</NavLink>
+                      <NavItem
+                        text="Labor Law And HR Services"
+                        to="/123stats"
+                        style="pt-3 pb-3"
+                      />
                     </li>
                   </ul>
                 </div>
               </div>
             </li>
             <li>
-              <NavLink to="/People">Our People</NavLink>
+              <NavItem text="Our People" to="/People" />
             </li>
             <li>
-              <NavLink to="/Clients">Our Valued Clients</NavLink>
+              <NavItem text="Our Valued Clients" to="/Clients" />
             </li>
             <li>
-              <NavLink to="/Testimonials">Testimonials</NavLink>
+              <NavItem text="Testimonials" to="/Testimonials" />
             </li>
             <li>
-              <NavLink to="/Contact">Contact</NavLink>
+              <NavItem text="Contact" to="/Contact" />
             </li>
             <li>
-              <NavLink to="/E">E</NavLink>
+              <NavItem text="E" to="/E" />
             </li>
           </ul>
         </div>

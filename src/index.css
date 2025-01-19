@@ -160,6 +160,9 @@ header .logo {
 header .logo img {
   height: 100%;
 }
+.bars {
+  font-size: 2rem;
+}
 
 header .menu {
   display: flex;
@@ -211,7 +214,7 @@ header .menu li .active {
   left: 50%;
   width: 15rem;
   height: 30rem;
-    overflow: scroll;
+  overflow: scroll;
 }
 .sm-menu::-webkit-scrollbar {
   display: none; /* For WebKit browsers like Chrome and Safari */
@@ -268,7 +271,8 @@ header .menu li span:hover + .other-links {
   border-bottom: 1px solid var(--primary-600);
   color: var(--primary-100);
   padding: 15px;
-  font-size: 16px; /* 1.6rem converted to 16px */
+  margin: 0 !important;
+  font-size: 14px; /* 1.6rem converted to 16px */
   font-weight: 500;
   text-transform: capitalize;
   position: relative;
@@ -309,7 +313,7 @@ header .menu li span:hover + .other-links {
   position: fixed;
   top: 5rem;
   left: 0rem;
-  width: 33rem;
+  width: 30rem;
   background: #ffffff59;
   padding: 20px;
   backdrop-filter: blur(2px);
@@ -406,7 +410,7 @@ header .menu li span:hover + .other-links {
     white-space: initial;
   }
   header .logo {
-    height: 3rem;
+    height: 4rem;
   }
   .ui-btn-open {
     position: absolute;

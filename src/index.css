@@ -304,6 +304,9 @@ header .menu li span:hover + .other-links {
 }
 
 @media (max-width: 576px) {
+ .landing .info {
+    width: 25rem;
+  }
 }
 
 @media (max-width: 768px) {

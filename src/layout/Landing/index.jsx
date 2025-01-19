@@ -10,7 +10,7 @@ const Landing = () => {
   return (
     <div className="landing">
       <div className="info">
-        <div className=" w-75 ms-md-auto">
+        <div className=" w-md-75 ms-md-auto">
           <h1>MG Law Firm</h1>
           <p>
             MG Law Firm is an Egyptian law firm that has been offering its

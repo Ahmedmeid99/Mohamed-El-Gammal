@@ -144,19 +144,37 @@ textarea {
   color: var(--primary-900);
 }
 
-.ui-fs-56{
+.ui-fs-large {
   font-size: 56px;
+}
+.ui-fs-small {
+  font-size: 0.7rem;
 }
 
 header .logo {
-  font-weight: 700;
   color: var(--primary-200);
   height: 5rem;
   z-index: 10;
+  padding: 5px;
+}
+header .logo img {
+  height: 100%;
 }
 
-head .menu {
-  flex-wrap: wrap;
+header .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+header .menu li a,
+header .menu li span {
+  max-width: 180px;
+  /* for be in one line */
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 header .menu li a:hover {
@@ -170,7 +188,44 @@ header .menu li .active {
   background-color: var(--white); /* var(--primary-200)*/
   color: var(--primary-900);
 }
-
+.sm-menu-container {
+  position: fixed;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  z-index: 99;
+  background: var(--primary-900);
+  transition: 1s;
+}
+/* open close menu classes */
+.open-menu {
+  right: 0 !important;
+}
+.close-menu {
+  right: -22rem !important;
+}
+.sm-menu {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 15rem;
+}
+.sm-menu li a,
+.sm-menu li span {
+  font-size: 18px;
+  font-weight: 600;
+  /* for be in one line */
+  max-width: 180px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ui-btn-open,
+.ui-btn-close {
+  display: none !important;
+}
 /* ----------------- */
 .other-links {
   position: absolute;
@@ -205,18 +260,15 @@ header .menu li span:hover + .other-links {
   margin-right: 30px;
 }
 .sublinks ul li a {
-  display: flex;
-  align-items: center;
   border-bottom: 1px solid var(--primary-600);
   color: var(--primary-100);
   padding: 15px;
   font-size: 16px; /* 1.6rem converted to 16px */
   font-weight: 500;
   text-transform: capitalize;
-
   position: relative;
   z-index: 999;
-  overflow-x: hidden;
+  white-space: initial;
 }
 .sublinks ul li:last-child a {
   border-bottom: 1px solid transparent !important;
@@ -229,7 +281,7 @@ header .menu li span:hover + .other-links {
   width: 100%;
   height: 100%;
   /* background-color: var(--primary-200); */
-  background-color:#fff;
+  background-color: #fff;
   z-index: -1;
   transition: 0.2s ease-in;
 }
@@ -284,8 +336,6 @@ header .menu li span:hover + .other-links {
 
 /* ====================[]================= */
 
-
-
 .practice-areas ul > li > a:hover {
   text-decoration: underline !important;
 }
@@ -295,36 +345,25 @@ header .menu li span:hover + .other-links {
   letter-spacing: 0em;
 }
 
-@media (max-width: 576px) {
-  .landing .info {
-    width: 21rem;
-  }
+@media (max-width: 1400px) {
 }
-
-@media (max-width: 768px) {
-  .other-links {
-    padding: 0;
-  }
-
-  .sublinks ul li:last-child a {
-    border-bottom: 1px solid #ddd !important;
-  }
-  .other-links > .sublinks {
-    flex-direction: column;
-  }
-  .ui-fs-56{
-    font-size: 2rem;
-  }
+@media (max-width: 1200px) {
 }
 
 @media (max-width: 992px) {
-  header .logo {
-    height: 45px;
+  .header-navbar .container {
+    align-items: start !important;
+    flex-direction: column !important;
+    padding: 1rem;
   }
-  header .menu li a {
-    padding: 10px;
-    font-size: 10px;
+
+  header .menu li a,
+  header .menu li span {
+    padding: 10px !important;
+    font-size: 12px !important;
+    max-width: 120px !important;
   }
+
   .other-links > .img-cover {
     display: none;
   }
@@ -345,8 +384,55 @@ header .menu li span:hover + .other-links {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
+  .landing .info {
+    width: 21rem;
+  }
+  .menu {
+    display: none !important;
+  }
+
+  header .container {
+    flex-direction: row !important;
+  }
+
+  header .menu li a,
+  header .menu li span {
+    white-space: initial;
+  }
+  header .logo {
+    height: 3rem;
+  }
+  .ui-btn-open {
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+  }
+  .ui-btn-open,
+  .ui-btn-close {
+    display: block !important;
+  }
+  .other-links {
+    padding: 0;
+  }
+
+  .sublinks ul li:last-child a {
+    border-bottom: 1px solid #ddd !important;
+  }
+  .other-links > .sublinks {
+    flex-direction: column;
+  }
+  .ui-fs-56 {
+    font-size: 2rem;
+  }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 576px) {
+}
+
+/* ----------------------- */
+@media (min-width: 768px) {
+  .sm-menu-container {
+    right: -22rem !important;
+  }
 }

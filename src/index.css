@@ -305,7 +305,7 @@ header .menu li span:hover + .other-links {
 
 @media (max-width: 576px) {
  .landing .info {
-    width: 24rem;
+    width: 21rem;
   }
 }
 

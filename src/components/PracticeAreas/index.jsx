@@ -1,58 +1,35 @@
+/* eslint-disable react/prop-types */
 import { FaSquare } from 'react-icons/fa6'
+
+const Link = ({ text, to }) => {
+  return (
+    <li className="d-flex justify-content-center align-items-center gap-3">
+      <FaSquare />
+      <a href={to} className="pointer-event text-white fs-3">
+        {text}
+      </a>
+    </li>
+  )
+}
 
 const PracticeAreas = () => {
   return (
-    <div className="practice-areas pt-5 pb-5">
-      <h1 className=" pb-5">PRACTICE AREAS</h1>
+    <div className="practice-areas ui-bg-900 w-100 pt-5 pb-5">
+      <h1 className="text-white text-center pb-5 ui-fs-56">PRACTICE AREAS</h1>
 
       <div className="d-flex justify-content-center align-items-start gap-5 pb-4">
-        <ul className=" list-group d-flex justify-content-center align-items-start gap-4">
-          <li className=" d-flex justify-content-center align-items-center gap-3">
-            <FaSquare />
-            <a href="#testimonials">Corporate And Commercial</a>
-          </li>
-          <li className=" d-flex justify-content-center align-items-center gap-3">
-            <FaSquare />
-
-            <a href="#team">Citizenship And 2nd Nationality Passport</a>
-          </li>
-          <li className=" d-flex justify-content-center align-items-center gap-3">
-            <FaSquare />
-
-            <a href="#services">Licenses And Approvals</a>
-          </li>
-          <li className=" d-flex justify-content-center align-items-center gap-3">
-            <FaSquare />
-
-            <a href="#our-skills">Legal Opinions And Research</a>
-          </li>
-          <li className=" d-flex justify-content-center align-items-center gap-3">
-            <FaSquare />
-
-            <a href="#work-steps">Real Estate</a>
-          </li>
+        <ul className="list-group d-flex justify-content-center align-items-start gap-4">
+          <Link text="Corporate And Commercial" to="#testimonials" />
+          <Link text="Citizenship And 2nd Nationality Passport" to="#team" />
+          <Link text="Licenses And Approvals" to="#services" />
+          <Link text="Legal Opinions And Research" to="#our-skills" />
+          <Link text="Real Estate" to="#work-steps" />
         </ul>
-        <ul className=" list-group d-flex justify-content-center align-items-start gap-4">
-          <li className=" d-flex justify-content-center align-items-center gap-3">
-            <FaSquare />
-
-            <a href="#events">Intellectual Property Rights</a>
-          </li>
-          <li className=" d-flex justify-content-center align-items-center gap-3">
-            <FaSquare />
-
-            <a href="#pricing">Contracts And Agreements</a>
-          </li>
-          <li className=" d-flex justify-content-center align-items-center gap-3">
-            <FaSquare />
-
-            <a href="#video">Civil Law And Litigation</a>
-          </li>
-          <li className=" d-flex justify-content-center align-items-center gap-3">
-            <FaSquare />
-
-            <a href="#stats">Labor Law And HR Services</a>
-          </li>
+        <ul className="list-group d-flex justify-content-center align-items-start gap-4">
+          <Link text="Intellectual Property Rights" to="#events" />
+          <Link text="Contracts And Agreements" to="#pricing" />
+          <Link text="Civil Law And Litigation" to="#video" />
+          <Link text="Labor Law And HR Services" to="#stats" />
         </ul>
       </div>
     </div>

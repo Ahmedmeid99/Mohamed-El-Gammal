@@ -143,6 +143,11 @@ textarea {
 .ui-text-900 {
   color: var(--primary-900);
 }
+
+.ui-fs-56{
+  font-size: 56px;
+}
+
 header .logo {
   font-weight: 700;
   color: var(--primary-200);
@@ -223,7 +228,8 @@ header .menu li span:hover + .other-links {
   left: -100%;
   width: 100%;
   height: 100%;
-  background-color: var(--primary-200);
+  /* background-color: var(--primary-200); */
+  background-color:#fff;
   z-index: -1;
   transition: 0.2s ease-in;
 }
@@ -277,23 +283,9 @@ header .menu li span:hover + .other-links {
 }
 
 /* ====================[]================= */
-.practice-areas {
-  background-color: var(--primary-900);
-  width: 100%;
-}
-.practice-areas h1 {
-  font-size: 56px;
-  text-align: center;
-  color: var(--backgroundColor);
-  letter-spacing: 0em;
-}
 
-.practice-areas ul > li > a {
-  font-size: 25px; /* 2.5rem converted to 40px */
-  color: var(--backgroundColor);
-  letter-spacing: 0em;
-  pointer-events: auto;
-}
+
+
 .practice-areas ul > li > a:hover {
   text-decoration: underline !important;
 }
@@ -319,6 +311,9 @@ header .menu li span:hover + .other-links {
   }
   .other-links > .sublinks {
     flex-direction: column;
+  }
+  .ui-fs-56{
+    font-size: 2rem;
   }
 }
 

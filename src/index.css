@@ -304,7 +304,7 @@ header .menu li span:hover + .other-links {
 }
 
 @media (max-width: 576px) {
- .landing .info {
+  .landing .info {
     width: 21rem;
   }
 }
@@ -340,6 +340,9 @@ header .menu li span:hover + .other-links {
   .landing .info {
     top: 9rem !important;
     left: 0 !important  ;
+  }
+  .landing .info p {
+    line-height: 1.4;
   }
   .practice-areas > div {
     flex-direction: column;

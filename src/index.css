@@ -20,7 +20,7 @@ html {
   --primary-400: #7e6bff;
   --primary-500: #5e48ff;
   --primary-600: #4c3bd4;
-  --primary-700: #2a0fc5;
+  --primary-700: #332c58;
   --primary-800: #0f4c85;
   --primary-900: #150958;
 
@@ -71,6 +71,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: var(--textColor);
+  overflow-x: hidden !important;
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -149,6 +150,9 @@ textarea {
 }
 .ui-fs-small {
   font-size: 0.7rem;
+}
+header.header {
+  z-index: 999;
 }
 
 header .logo {
@@ -257,7 +261,7 @@ header .sm-menu li .active {
   padding: 30px;
   background: var(--primary-900);
   margin-top: 0px;
-  border-bottom: 5px solid var(--primary-800);
+  border-bottom: 5px solid var(--primary-700);
   transition: 0.3s;
   opacity: 0;
   z-index: -1;
@@ -346,7 +350,7 @@ header .menu li span:hover + .other-links {
   padding: 16px; /* 1rem converted to 16px */
   width: 100%;
   font-size: 16px; /* 1.6rem converted to 16px */
-  background: var(--primary-800);
+  background: var(--primary-700);
   color: var(--primary-100);
   text-align: center;
   border: 7px solid var(--primary-900);
@@ -358,7 +362,7 @@ header .menu li span:hover + .other-links {
 }
 
 /* ====================[practice areas]================= */
-.practice-areas h1 {
+.practice-areas h2 {
   font-weight: 400;
 }
 .practice-areas ul > li > a {
@@ -377,6 +381,7 @@ header .menu li span:hover + .other-links {
 /* ================[Our People]================== */
 section.our-people {
   padding-bottom: 10rem !important;
+  background: var(--primary-100);
 }
 .our-people .row {
   width: fit-content;
@@ -384,26 +389,80 @@ section.our-people {
   gap: 6rem;
 }
 
-.our-people h1 {
+.our-people h2 {
   font-weight: 300;
-  color: var(--primary-800);
+  color: var(--primary-700);
+}
+.our-people .row .col {
+  position: relative;
+  z-index: 10;
 }
 .our-people .translateY-4 {
+  position: relative;
   transform: translateY(3rem);
 }
 .our-people .name {
   font-size: 18px !important;
   font-weight: 300;
-  color: var(--primary-800);
+  color: var(--primary-700);
 }
 .our-people .title {
   font-size: 14px !important;
 
   font-weight: 300;
-  color: var(--primary-800);
+  color: var(--primary-700);
 }
 
-/* =================[]================= */
+/* =================[Our Valued Clients]================= */
+.our-valued-clients {
+  background-color: var(--primary-700);
+  padding-bottom: 10rem !important;
+}
+.our-valued-clients h2 {
+  font-weight: 400;
+  color: var(--white);
+}
+.our-valued-clients .slider-container {
+  overflow: hidden;
+}
+.our-valued-clients .slider-item {
+  position: relative;
+  border-left: 3rem solid var(--primary-700);
+  border-right: 3rem solid var(--primary-700);
+  width: 2rem;
+  height: 12rem;
+  background-color: var(--green-dark);
+  border-radius: 1rem;
+}
+.our-valued-clients .slider-item h3 {
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slick-slider {
+  position: relative;
+}
+.slick-slider .slick-arrow.slick-next {
+  position: absolute;
+  right: -1rem;
+  z-index: 9;
+}
+.slick-slider .slick-arrow.slick-prev {
+  position: absolute;
+  left: -1rem;
+  z-index: 9;
+}
+
+/* ================================================ */
+.legal-opinions {
+  background-color: var(--primary-700);
+  padding-bottom: 10rem !important;
+}
+.legal-opinions p {
+  max-width: 90rem;
+}
 @media (max-width: 1400px) {
 }
 @media (max-width: 1200px) {
@@ -446,6 +505,11 @@ section.our-people {
   }
   .ui-fs-large {
     font-size: 32px;
+  }
+  .our-valued-clients .slider-item {
+    border-left: 0.5rem solid var(--primary-700);
+    border-right: 0.5rem solid var(--primary-700);
+    height: 8rem;
   }
 }
 

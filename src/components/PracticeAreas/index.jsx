@@ -15,9 +15,9 @@ const Link = ({ text, to }) => {
 const PracticeAreas = () => {
   return (
     <section className="practice-areas ui-bg-900 w-100 pt-5 pb-5">
-      <h1 className="text-white text-center pb-5 ui-fs-large">
+      <h2 className="text-white text-center pb-5 ui-fs-large">
         PRACTICE AREAS
-      </h1>
+      </h2>
 
       <div className="d-flex justify-content-center align-items-start pt-md-4 gap-5 pb-4">
         <ul className="list-group d-flex justify-content-center align-items-start gap-4">

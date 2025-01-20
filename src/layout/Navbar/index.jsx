@@ -5,6 +5,7 @@ import Logo from '../../ui/Logo'
 import { IoMdClose } from 'react-icons/io'
 import { FaBarsStaggered } from 'react-icons/fa6'
 import { useState } from 'react'
+import { RiArrowDropDownLine } from 'react-icons/ri'
 
 const NavItem = ({ text, to, style }) => {
   return (
@@ -62,8 +63,11 @@ const Navbar = () => {
               <NavItem text="Home" to="/" />
             </li>
             <li>
-              <span className="position-relative d-block text-uppercase fs-6 pt-4 pb-4 ps-3 pe-3 ui-text-200">
-                Practice Areas
+              <span className="nav-link position-relative d-block text-uppercase fs-6 pt-4 pb-4 ps-3 pe-3 ui-text-200">
+                <span>Practice Areas</span>
+                <span className="drop-down-icon">
+                  <RiArrowDropDownLine />
+                </span>
               </span>
               <div className="other-links w-100 d-flex justify-content-between align-items-start gap-4">
                 <div className="img-cover" style={style}></div>
@@ -139,32 +143,32 @@ const Navbar = () => {
               </div>
             </li>
             <li>
-              <NavItem text="Our People" to="/People" style="pt-3 pb-3 small" />
+              <NavItem text="Our People" to="/People" style="small" />
             </li>
 
             <li>
               <NavItem
                 text="Our Valued Clients"
                 to="/Clients"
-                style="pt-3 pb-3 small"
+                style="small"
               />
             </li>
             <li>
               <NavItem
                 text="Legal opinions"
                 to="/opinions"
-                style="pt-3 pb-3 small"
+                style=" small"
               />
             </li>
             <li>
               <NavItem
                 text="Testimonials"
                 to="/Testimonials"
-                style="pt-3 pb-3 small"
+                style=" small"
               />
             </li>
             <li>
-              <NavItem text="Contact" to="/Contact" style="pt-3 pb-3 small" />
+              <NavItem text="Contact" to="/Contact" style=" small" />
             </li>
             <li>
               <NavItem text="E" to="/E" />
@@ -190,7 +194,10 @@ const Navbar = () => {
                   onClick={toggleDropdown}
                   className="nav-link  position-relative d-block text-uppercase  pt-1 pb-1 ps-3 pe-3 ui-text-200"
                 >
-                  Practice Areas
+                  <span> Practice Areas</span>
+                  <span className="drop-down-icon">
+                    <RiArrowDropDownLine />
+                  </span>
                 </span>
                 {isDropdownOpen && (
                   <ul>
@@ -198,63 +205,63 @@ const Navbar = () => {
                       <NavItem
                         text="Corporate And Commercial"
                         to="/123testimonials"
-                        style="pt-3 pb-3 "
+                        style="pt-2 pb-2 "
                       />
                     </li>
                     <li>
                       <NavItem
                         text="Citizenship And 2nd Nationality Passport"
                         to="/123team"
-                        style="pt-3 pb-3 "
+                        style="pt-2 pb-2 "
                       />
                     </li>
                     <li>
                       <NavItem
                         text="Licenses And Approvals"
                         to="/123services"
-                        style="pt-3 pb-3 "
+                        style="pt-2 pb-2 "
                       />
                     </li>
                     <li>
                       <NavItem
                         text="Legal Opinions And Research"
                         to="/123our-skills"
-                        style="pt-3 pb-3 "
+                        style="pt-2 pb-2 "
                       />
                     </li>
                     <li>
                       <NavItem
                         text="Real Estate"
                         to="/123work-steps"
-                        style="pt-3 pb-3 "
+                        style="pt-2 pb-2 "
                       />
                     </li>
                     <li>
                       <NavItem
                         text="Intellectual Property Rights"
                         to="/123events"
-                        style="pt-3 pb-3 "
+                        style="pt-2 pb-2 "
                       />
                     </li>
                     <li>
                       <NavItem
                         text="Contracts And Agreements"
                         to="/123pricing"
-                        style="pt-3 pb-3 "
+                        style="pt-2 pb-2 "
                       />
                     </li>
                     <li>
                       <NavItem
                         text="Civil Law And Litigation"
                         to="/123video"
-                        style="pt-3 pb-3 "
+                        style="pt-2 pb-2 "
                       />
                     </li>
                     <li>
                       <NavItem
                         text="Labor Law And HR Services"
                         to="/123stats"
-                        style="pt-3 pb-3 "
+                        style="pt-2 pb-2 "
                       />
                     </li>
                   </ul>

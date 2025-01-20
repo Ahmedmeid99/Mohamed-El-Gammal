@@ -5,7 +5,7 @@ const Link = ({ text, to }) => {
   return (
     <li className="d-flex justify-content-center align-items-center gap-3">
       <FaSquare />
-      <a href={to} className="pointer-event text-white fs-3">
+      <a href={to} className="text-white fs-5">
         {text}
       </a>
     </li>
@@ -14,12 +14,12 @@ const Link = ({ text, to }) => {
 
 const PracticeAreas = () => {
   return (
-    <div className="practice-areas ui-bg-900 w-100 pt-5 pb-5">
+    <section className="practice-areas ui-bg-900 w-100 pt-5 pb-5">
       <h1 className="text-white text-center pb-5 ui-fs-large">
         PRACTICE AREAS
       </h1>
 
-      <div className="d-flex justify-content-center align-items-start gap-5 pb-4">
+      <div className="d-flex justify-content-center align-items-start pt-md-4 gap-5 pb-4">
         <ul className="list-group d-flex justify-content-center align-items-start gap-4">
           <Link text="Corporate And Commercial" to="#testimonials" />
           <Link text="Citizenship And 2nd Nationality Passport" to="#team" />
@@ -34,7 +34,7 @@ const PracticeAreas = () => {
           <Link text="Labor Law And HR Services" to="#stats" />
         </ul>
       </div>
-    </div>
+    </section>
   )
 }
 

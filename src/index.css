@@ -14,14 +14,14 @@ html {
 
 :root {
   /* Colors */
-  --primary-100: #e0d4ff;
+  --primary-100: #eaf4f6;
   --primary-200: #bfb1ff;
   --primary-300: #9e8eff;
   --primary-400: #7e6bff;
   --primary-500: #5e48ff;
   --primary-600: #4c3bd4;
   --primary-700: #2a0fc5;
-  --primary-800: #1f0c93;
+  --primary-800: #0f4c85;
   --primary-900: #150958;
 
   --grey-50: #f8fafc;
@@ -132,16 +132,16 @@ textarea {
 }
 
 .ui-bg-200 {
-  background-color: var(--primary-200);
+  background-color: var(--primary-200) !important;
 }
 .ui-bg-900 {
-  background-color: var(--primary-900);
+  background-color: var(--primary-900) !important;
 }
 .ui-text-200 {
-  color: var(--primary-200);
+  color: var(--primary-200) !important;
 }
 .ui-text-900 {
-  color: var(--primary-900);
+  color: var(--primary-900) !important;
 }
 
 .ui-fs-large {
@@ -163,7 +163,9 @@ header .logo img {
 .bars {
   font-size: 2rem;
 }
-
+header .nav-link {
+  cursor: pointer;
+}
 header .menu {
   display: flex;
   flex-direction: row;
@@ -176,20 +178,24 @@ header .menu li span {
   /* for be in one line */
   display: inline-block;
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
 }
-
+header .menu li a {
+  overflow: hidden;
+}
 header .menu li a:hover {
-  background-color: var(--primary-200);
-  color: var(--primary-900);
+  background-color: var(--primary-200) !important;
+  color: var(--primary-900) !important;
 }
 header .menu li a:hover::before {
   left: 0;
 }
 header .menu li .active {
   background-color: var(--white); /* var(--primary-200)*/
-  color: var(--primary-900);
+  color: var(--primary-900) !important;
+}
+header .sm-menu li .active {
+  color: var(--white) !important; /* var(--primary-200)*/
 }
 .sm-menu-container {
   position: fixed;
@@ -198,7 +204,7 @@ header .menu li .active {
   height: 100vh;
   z-index: 99;
   background: var(--primary-900);
-  transition: 1s;
+  transition: 0.5s;
 }
 /* open close menu classes */
 .open-menu {
@@ -209,7 +215,7 @@ header .menu li .active {
 }
 .sm-menu {
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translate(-50%, -50%);
   left: 50%;
   width: 15rem;
@@ -221,14 +227,22 @@ header .menu li .active {
 }
 .sm-menu li a,
 .sm-menu li span {
-  /* font-size: 18px; */
   font-weight: 600;
-  /* for be in one line */
   max-width: 180px;
   display: inline-block;
   white-space: nowrap;
-  overflow: hidden;
+  /* overflow: hidden; */
   text-overflow: ellipsis;
+}
+.sm-menu li a:hover {
+  background-color: var(--primary-200) !important;
+  color: var(--primary-900) !important;
+}
+.drop-down-icon {
+  font-size: 2rem;
+  position: absolute;
+  top: 45%;
+  transform: translate(0, -50%);
 }
 .ui-btn-open,
 .ui-btn-close {
@@ -313,7 +327,7 @@ header .menu li span:hover + .other-links {
   position: fixed;
   top: 5rem;
   left: 0rem;
-  width: 30rem;
+  width: 33rem;
   background: #ffffff59;
   padding: 20px;
   backdrop-filter: blur(2px);
@@ -343,8 +357,14 @@ header .menu li span:hover + .other-links {
   background: var(--primary-900);
 }
 
-/* ====================[]================= */
-
+/* ====================[practice areas]================= */
+.practice-areas h1 {
+  font-weight: 400;
+}
+.practice-areas ul > li > a {
+  text-transform: uppercase !important;
+  font-weight: 400;
+}
 .practice-areas ul > li > a:hover {
   text-decoration: underline !important;
 }
@@ -354,6 +374,36 @@ header .menu li span:hover + .other-links {
   letter-spacing: 0em;
 }
 
+/* ================[Our People]================== */
+section.our-people {
+  padding-bottom: 10rem !important;
+}
+.our-people .row {
+  width: fit-content;
+  margin: auto;
+  gap: 6rem;
+}
+
+.our-people h1 {
+  font-weight: 300;
+  color: var(--primary-800);
+}
+.our-people .translateY-4 {
+  transform: translateY(3rem);
+}
+.our-people .name {
+  font-size: 18px !important;
+  font-weight: 300;
+  color: var(--primary-800);
+}
+.our-people .title {
+  font-size: 14px !important;
+
+  font-weight: 300;
+  color: var(--primary-800);
+}
+
+/* =================[]================= */
 @media (max-width: 1400px) {
 }
 @media (max-width: 1200px) {
@@ -384,12 +434,18 @@ header .menu li span:hover + .other-links {
     top: 9rem !important;
     left: 0 !important  ;
   }
+  .landing .info > div {
+    width: 100% !important;
+  }
   .landing .info p {
     line-height: 1.4;
   }
   .practice-areas > div {
     flex-direction: column;
     padding: 0 2rem;
+  }
+  .ui-fs-large {
+    font-size: 32px;
   }
 }
 

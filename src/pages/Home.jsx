@@ -1,3 +1,4 @@
+import OurPeople from '../components/OurPeople'
 import PracticeAreas from '../components/PracticeAreas'
 import Layout from '../layout'
 import Landing from '../layout/Landing'
@@ -7,6 +8,7 @@ const Home = () => {
     <Layout>
       <Landing />
       <PracticeAreas />
+      <OurPeople/>
     </Layout>
   )
 }

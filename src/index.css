@@ -334,7 +334,7 @@ header .menu li span:hover + .other-links {
   z-index: -1;
 }
 .landing .info {
-  position: fixed;
+  position: absolute;
   top: 5rem;
   left: 0rem;
   width: 33rem;
@@ -476,6 +476,21 @@ section.our-people {
 .feature-contact p {
   letter-spacing: 1.1px;
 }
+
+/* ================================================ */
+.testimonials .img-cover {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: -1;
+}
+
+.testimonials p::before {
+  content: '“'; /* Custom opening quote */
+}
+
+.testimonials p::after {
+  content: '”'; /* Custom closing quote */
+}
 @media (max-width: 1400px) {
 }
 @media (max-width: 1200px) {
@@ -525,10 +540,11 @@ section.our-people {
     height: 8rem;
   }
   .translateY-4 {
-    transform: translateY(0rem);
+    transform: translateY(0rem) !important;
   }
 }
-
+/* 
+Testimonials  */
 @media (max-width: 768px) {
   .landing .info {
     width: 21rem;

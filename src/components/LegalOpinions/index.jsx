@@ -1,3 +1,8 @@
+import { FaRegStar } from 'react-icons/fa6'
+import { MdOutlineElectricBolt } from 'react-icons/md'
+import { TbWorld } from 'react-icons/tb'
+import { WiStars } from 'react-icons/wi'
+
 const LegalOpinions = () => {
   return (
     <section className="section legal-opinions w-100 pt-5 pb-5">
@@ -7,8 +12,10 @@ const LegalOpinions = () => {
       <div className="container">
         <div className="d-flex justify-content-center align-items-center flex-column flex-md-row gap-5 mb-5">
           <div className="option">
-            <h3 className=" text-white mb-4">
-              <span>*</span>
+            <h3 className=" text-white mb-4 d-flex justify-content-start align-items-end gap-3">
+              <span>
+                <WiStars />
+              </span>
               <span>Underwriting Agreement</span>
             </h3>
             <p className=" text-white  fs-6">
@@ -20,8 +27,10 @@ const LegalOpinions = () => {
             </p>
           </div>
           <div className="option">
-            <h3 className=" text-white mb-4">
-              <span>*</span>
+            <h3 className=" text-white mb-4 d-flex justify-content-start align-items-end gap-3">
+              <span>
+                <FaRegStar />
+              </span>
               <span>Legal case of Carrefour</span>
             </h3>
             <p className=" text-white fs-6">
@@ -35,8 +44,10 @@ const LegalOpinions = () => {
         </div>
         <div className="d-flex justify-content-center align-items-center flex-column flex-md-row gap-5 mb-5">
           <div className="option">
-            <h3 className=" text-white mb-4">
-              <span>*</span>
+            <h3 className=" text-white mb-4 d-flex justify-content-start align-items-end gap-3">
+              <span>
+                <TbWorld />
+              </span>
               <span>Multilingual Functionality</span>
             </h3>
             <p className=" text-white  fs-6">
@@ -47,8 +58,10 @@ const LegalOpinions = () => {
             </p>
           </div>
           <div className="option">
-            <h3 className=" text-white mb-4">
-              <span>*</span>
+            <h3 className=" text-white mb-4 d-flex justify-content-start align-items-end gap-3">
+              <span>
+                <MdOutlineElectricBolt />
+              </span>
               <span>Advanced Tech</span>
             </h3>
             <p className=" text-white  fs-6">
@@ -59,6 +72,12 @@ const LegalOpinions = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className="feature-contact container d-flex justify-content-center align-items-center flex-column bg-light p-5  rounded-1">
+        <p className='fs-4 ui-text-900 mb-5'>
+          If you’d like more information about our features, get in touch today.
+        </p>
+        <button className="btn btn-light border border-dark py-2 px-4">Get in Touch</button>
       </div>
     </section>
   )

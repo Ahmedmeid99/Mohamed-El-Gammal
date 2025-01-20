@@ -30,7 +30,7 @@ const Navbar = () => {
     backgroundRepeat: 'no-repeat',
     width: '30rem',
     height: '60vh',
-    opacity: '.5',
+    opacity: '.8',
     borderRadius: '1rem',
   }
 
@@ -66,7 +66,7 @@ const Navbar = () => {
               <span className="nav-link position-relative d-block text-uppercase fs-6 pt-4 pb-4 ps-3 pe-3 ui-text-200">
                 <span>Practice Areas</span>
                 <span className="drop-down-icon">
-                  <RiArrowDropDownLine />
+                  {/* <RiArrowDropDownLine /> */}
                 </span>
               </span>
               <div className="other-links w-100 d-flex justify-content-between align-items-start gap-4">
@@ -147,25 +147,13 @@ const Navbar = () => {
             </li>
 
             <li>
-              <NavItem
-                text="Our Valued Clients"
-                to="/Clients"
-                style="small"
-              />
+              <NavItem text="Our Valued Clients" to="/Clients" style="small" />
             </li>
             <li>
-              <NavItem
-                text="Legal opinions"
-                to="/opinions"
-                style=" small"
-              />
+              <NavItem text="Legal opinions" to="/opinions" style=" small" />
             </li>
             <li>
-              <NavItem
-                text="Testimonials"
-                to="/Testimonials"
-                style=" small"
-              />
+              <NavItem text="Testimonials" to="/Testimonials" style=" small" />
             </li>
             <li>
               <NavItem text="Contact" to="/Contact" style=" small" />

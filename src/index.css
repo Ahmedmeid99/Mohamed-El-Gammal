@@ -164,9 +164,7 @@ header .logo {
 header .logo img {
   height: 100%;
 }
-.bars {
-  font-size: 2rem;
-}
+
 header .nav-link {
   cursor: pointer;
 }
@@ -332,9 +330,12 @@ header .menu li span:hover + .other-links {
   top: 5rem;
   left: 0rem;
   width: 33rem;
-  background: #ffffff59;
   padding: 20px;
-  backdrop-filter: blur(2px);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.027);
+  backdrop-filter: blur(60px);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089);
 }
 .landing .info h1 {
   margin-bottom: 20px; /* 2rem converted to 32px */
@@ -511,6 +512,9 @@ section.our-people {
     border-right: 0.5rem solid var(--primary-700);
     height: 8rem;
   }
+  .translateY-4 {
+    transform: translateY(0rem);
+  }
 }
 
 @media (max-width: 768px) {
@@ -534,8 +538,9 @@ section.our-people {
   }
   .ui-btn-open {
     position: absolute;
-    top: 0.8rem;
+    top: 1rem;
     right: 1rem;
+    font-size: 2rem;
   }
   .ui-btn-open,
   .ui-btn-close {

@@ -53,7 +53,7 @@ const Navbar = () => {
           </div>
           <span
             onClick={openMenu}
-            className="bars text-end  ui-text-200 ui-btn-open"
+            className="text-end  ui-text-200 ui-btn-open"
           >
             <FaBarsStaggered />
           </span>

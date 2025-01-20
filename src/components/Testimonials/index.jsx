@@ -12,7 +12,7 @@ const Testimonials = () => {
           />
         </div>
       </div>
-      <div className="row flex-column flex-md-row">
+      <div className="row flex-column flex-md-row w-100 m-auto">
         <div className="col border border-light ui-bg-900 d-flex justify-content-center align-items-center flex-column pt-5 pb-5">
           <span className="text-white fs-1 mt-5  mb-5">
             <FaQuoteLeft />

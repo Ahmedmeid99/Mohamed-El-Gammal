@@ -491,6 +491,23 @@ section.our-people {
 .testimonials p::after {
   content: '”'; /* Custom closing quote */
 }
+
+/* ================================================= */
+.our-firm p {
+  font-size: 1.1rem !important;
+  text-shadow: 0px 1px 1px #150958a8;
+  display: inline-block;
+}
+
+.our-firm ul {
+  list-style: square;
+}
+.our-firm ul li {
+  font-size: 1.1rem !important;
+  text-shadow: 0px 1px 1px #150958a8;
+  margin-bottom: 0.5rem;
+}
+/* ================================================ */
 @media (max-width: 1400px) {
 }
 @media (max-width: 1200px) {

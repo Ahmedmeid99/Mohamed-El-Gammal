@@ -5,16 +5,18 @@ import PracticeAreas from '../components/PracticeAreas'
 import Testimonials from '../components/Testimonials'
 import Layout from '../layout'
 import Landing from '../layout/Landing'
+import OurFirm from '../components/OurFirm'
 
 const Home = () => {
   return (
     <Layout>
       <Landing />
       <PracticeAreas />
-      <OurPeople/>
-      <OurValuedClients/>
-      <LegalOpinions/>
-      <Testimonials/>
+      <OurPeople />
+      <OurValuedClients />
+      <LegalOpinions />
+      <Testimonials />
+      <OurFirm />
     </Layout>
   )
 }

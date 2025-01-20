@@ -473,7 +473,7 @@ section.our-people {
   max-width: 90rem;
 }
 
-.feature-contact p{
+.feature-contact p {
   letter-spacing: 1.1px;
 }
 @media (max-width: 1400px) {
@@ -487,9 +487,7 @@ section.our-people {
     flex-direction: column !important;
     padding: 1rem;
   }
-  .logo {
-    height: 4rem;
-  }
+
   header .menu li a,
   header .menu li span {
     padding: 10px !important;
@@ -537,6 +535,10 @@ section.our-people {
   }
   .menu {
     display: none !important;
+  }
+
+  .logo {
+    height: 3.5rem !important;
   }
 
   header .container {

@@ -3,9 +3,9 @@ const OurPeople = () => {
     <section className=" our-people pt-5 pb-5">
       <h2 className="text-center pt-2 pb-2 fs-1 fw-normal">OUR PEOPLE</h2>
       <div className="row justify-content-center align-items-center">
-        <div className="col d-flex justify-content-center align-items-center  ">
+        <div className="col  order-2 order-md-1 d-flex justify-content-center align-items-center  ">
           <div className="translateY-4">
-            <div className="img-cover  ">
+            <div className="img-cover">
               <img
                 className="rounded-2"
                 src="https://static.wixstatic.com/media/9488f5_51884179b90d4f15846f0ba8e3fd9076~mv2.jpg/v1/fill/w_174,h_198,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/13.jpg"
@@ -17,7 +17,7 @@ const OurPeople = () => {
           </div>
         </div>
 
-        <div className="col d-flex justify-content-center align-items-center">
+        <div className="col order-1 order-md-2 d-flex justify-content-center align-items-center">
           <div className=" ">
             <div className="img-cover">
               <img
@@ -31,7 +31,7 @@ const OurPeople = () => {
           </div>
         </div>
 
-        <div className="col d-flex justify-content-center align-items-center">
+        <div className="col order-2 order-md-3 d-flex justify-content-center align-items-center">
           <div className="translateY-4">
             <div className="img-cover">
               <img

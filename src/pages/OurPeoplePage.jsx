@@ -34,7 +34,7 @@ const OurPeople = () => {
                     {person.details.map((para, index) => (
                       <p
                         key={index}
-                        className=" text-custom-spacing text-white fw-lighter"
+                        className=" text-custom-spacing text-white fs-5 fw-lighter"
                       >
                         {para}
                       </p>

@@ -239,7 +239,7 @@ header .sm-menu li .active {
 }
 header .menu li > span {
   padding-bottom: 1.9rem !important;
-  padding-right: 2rem !important;
+  margin-right: 1rem !important;
 }
 .sm-menu li a,
 .sm-menu li > span {
@@ -257,7 +257,7 @@ header .menu li > span {
 .drop-down-icon {
   font-size: 2rem;
   position: absolute;
-  right: 0px;
+  right: -10px;
   top: 41%;
   transform: translate(0, -50%);
 }

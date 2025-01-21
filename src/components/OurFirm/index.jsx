@@ -9,7 +9,7 @@ const OurFirm = () => {
   }
 
   return (
-    <div className="our-firm" style={style}>
+    <div className="our-firm pt-5" style={style}>
       <div className=" p-4 container">
         <h2 className=" text-center fw-normal fs-1 ui-text-900 mb-5">
           OUR FIRM

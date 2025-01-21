@@ -78,7 +78,7 @@ const Navbar = () => {
               <span className="nav-link position-relative d-block text-uppercase fs-6 pt-4 pb-4 ps-3 pe-3 ui-text-200">
                 <span>Practice Areas</span>
                 <span className="drop-down-icon">
-                  {/* <RiArrowDropDownLine /> */}
+                  <RiArrowDropDownLine />
                 </span>
               </span>
               <div className="other-links w-100 d-flex justify-content-between align-items-start gap-4">

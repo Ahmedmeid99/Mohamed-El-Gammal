@@ -7,6 +7,7 @@ const Landing = () => {
     width: '100%',
     height: '88vh',
   }
+  const log=()=>console.log('button work successfully')
   return (
     <div className="landing">
       <div className="info">
@@ -20,7 +21,9 @@ const Landing = () => {
             both locally within Egypt and internationally, either directly or
             remotely, tailored to meet the specific needs of our clients.
           </p>
-          <button className="action">Find out more about our Firm</button>
+          <button className="action" onClick={log}>
+            Find out more about our Firm
+          </button>
         </div>
       </div>
       <div style={style}></div>

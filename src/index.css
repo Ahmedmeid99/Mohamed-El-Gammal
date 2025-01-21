@@ -180,7 +180,7 @@ header .menu {
   flex-wrap: nowrap;
 }
 header .menu li a,
-header .menu li span {
+header .menu li > span {
   max-width: 180px;
   /* for be in one line */
   display: inline-block;
@@ -232,8 +232,11 @@ header .sm-menu li .active {
 .sm-menu::-webkit-scrollbar {
   display: none; /* For WebKit browsers like Chrome and Safari */
 }
+header .menu li > span {
+  padding-bottom: 1.9rem !important;
+}
 .sm-menu li a,
-.sm-menu li span {
+.sm-menu li > span {
   font-weight: 600;
   max-width: 200px;
   display: inline-block !important;
@@ -249,7 +252,7 @@ header .sm-menu li .active {
   font-size: 2rem;
   position: absolute;
   right: -10px;
-  top: 39%;
+  top: 41%;
   transform: translate(0, -50%);
 }
 .ui-btn-open,
@@ -264,7 +267,7 @@ header .sm-menu li .active {
   transform: translateY(30px);
   padding: 30px;
   background: var(--primary-900);
-  margin-top: -3px;
+  margin-top: -5px;
   border-bottom: 5px solid var(--primary-700);
   border-top: 5px solid var(--primary-700);
   transition: 0.3s;
@@ -278,7 +281,7 @@ header .sm-menu li .active {
 }
 
 .other-links:hover,
-header .menu li span:hover + .other-links {
+header .menu li > span:hover + .other-links {
   z-index: 1;
   opacity: 1;
   transform: translateY(0px);
@@ -333,11 +336,10 @@ header .menu li span:hover + .other-links {
 
 /* ===================[Landing ]===================== */
 .landing {
-  /* position: relative; */
+  position: relative;
   padding-top: 4rem;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
-  z-index: -1;
 }
 .landing .info {
   position: absolute;
@@ -371,7 +373,7 @@ header .menu li span:hover + .other-links {
   border: 1px solid var(--primary-100);
   transition: var(--transition);
 }
-.landing .info button.action:hover {
+.landing .info button:hover {
   background: var(--primary-700);
 }
 
@@ -529,7 +531,7 @@ section.our-people {
   }
 
   header .menu li a,
-  header .menu li span {
+  header .menu li > span {
     padding: 10px !important;
     font-size: 12px !important;
     max-width: 120px !important;
@@ -587,7 +589,7 @@ Testimonials  */
   }
 
   header .menu li a,
-  header .menu li span {
+  header .menu li > span {
     white-space: initial;
   }
 

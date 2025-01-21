@@ -3,9 +3,9 @@ import Map from './Map'
 
 const ContactUs = () => {
   return (
-    <section className="section contact-us pb-5">
+    <section className="section contact-us pt-5 pb-5">
       <div className="container">
-        <h2 className="fs-1 pt-5 pb-4 ui-text-900">CONTACT US</h2>
+        <h2 className="fs-1 pt-4 pb-4 ui-text-900">CONTACT US</h2>
         <div>
           <strong className="fs-6 d-inline ui-text-900">
             At MG Law Office,

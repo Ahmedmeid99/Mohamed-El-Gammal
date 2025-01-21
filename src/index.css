@@ -514,8 +514,7 @@ section.our-people {
 /* ====================[Our Firm Section]========================= */
 .our-firm p {
   font-size: 1.1rem !important;
-  text-shadow: 0px 1px 1px #150958a8;
-  display: inline-block !important;
+  text-shadow: 0px 1px 0px #150958a8;
 }
 
 .our-firm ul {

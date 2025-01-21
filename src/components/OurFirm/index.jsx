@@ -10,12 +10,14 @@ const OurFirm = () => {
 
   return (
     <div className="our-firm" style={style}>
-      <div className="container p-5">
-        <h2 className=" text-center fw-normal fs-1 ui-text-900 mb-5">OUR FIRM</h2>
+      <div className=" p-4 container">
+        <h2 className=" text-center fw-normal fs-1 ui-text-900 mb-5">
+          OUR FIRM
+        </h2>
         <section className="text-section">
           <div>
             <strong className="fs-5">Our mission:</strong>
-            <p className="fw-normal fs-6">
+            <p className="fw-normal fs-6 text-custom-spacing">
               To provide you with outstanding, personalized representation and
               effective legal solutions that empowers you to navigate through
               legal challenges with confidence. We strongly belief in the
@@ -31,7 +33,7 @@ const OurFirm = () => {
         <section className="text-section mb-5">
           <div>
             <strong className="fs-5">Our vision:</strong>
-            <p>
+            <p className="text-custom-spacing">
               To be more than just a legal office. We strive with every effort
               to build professional relationships with our clients and provide
               them with a protection system based on knowledge of legal
@@ -43,7 +45,7 @@ const OurFirm = () => {
           </div>
         </section>
         <section className="text-section">
-          <p>
+          <p className="text-custom-spacing">
             We seek to provide our clients with legal support at the highest
             level in terms of professionalism, understanding, transparency and
             credibility, focusing primarily on the interest of our clients. At

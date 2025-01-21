@@ -6,6 +6,8 @@ import {
 } from 'react-router-dom'
 
 const Home = React.lazy(() => import('./pages/Home'))
+const ContactUs = React.lazy(() => import('./pages/ContactUs'))
+const OurPeople = React.lazy(() => import('./pages/OurPeople'))
 
 function App() {
   return (
@@ -19,7 +21,8 @@ function App() {
       >
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/About" element={<p>about</p>} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/our-people" element={<OurPeople />} />
 
           {/* <Route path="*" element={<Home />} /> */}
         </Routes>

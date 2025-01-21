@@ -155,7 +155,7 @@ const Navbar = () => {
               </div>
             </li>
             <li>
-              <NavItem text="Our People" to="/People" style="small" />
+              <NavItem text="Our People" to="/our-people" style="small" />
             </li>
 
             <li>
@@ -180,7 +180,7 @@ const Navbar = () => {
               />
             </li>
             <li>
-              <NavItem text="Contact" to="/Contact" style=" small" />
+              <NavItem text="Contact" to="/contact-us" style=" small" />
             </li>
             <li>
               <NavItem text="E" to="/E" />
@@ -280,7 +280,7 @@ const Navbar = () => {
                 )}
               </li>
               <li>
-                <NavItem text="Our People" to="/People" />
+                <NavItem text="Our People" to="/our-people" />
               </li>
               <li>
                 <LinkItem text="Our Valued Clients" localSection="#clients" />
@@ -295,7 +295,7 @@ const Navbar = () => {
                 <LinkItem text="Testimonials" localSection="#testimonials" />
               </li>
               <li>
-                <NavItem text="Contact" to="/Contact" />
+                <NavItem text="Contact" to="/contact-us" />
               </li>
               <li>
                 <NavItem text="E" to="/E" />

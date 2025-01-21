@@ -15,12 +15,19 @@ const ContactInfo = () => {
           </p>
           <p className="tel  small fw-light ">
             <strong>Tel</strong> :{' '}
-            <span className="text-primary">+202-27353328</span>
+            <span className="text-primary ">+202-27353328</span>
           </p>
-          <div className="email  small fw-light  mb-3">info@gammallaw.com</div>
+          <a
+            href="mailto:info@gammallaw.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="email text-primary small fw-light mb-3"
+          >
+            info@gammallaw.com
+          </a>
           <div className="time w-100  small d-flex justify-content-between">
-            <span >Sun- Thu </span>
-            <span >9:00 am – 6:00 pm</span>
+            <span>Sun- Thu </span>
+            <span>9:00 am – 6:00 pm</span>
           </div>
         </div>
 
@@ -35,7 +42,14 @@ const ContactInfo = () => {
             <strong>Tel</strong> :
             <span className="text-primary">+02-27350010</span>
           </p>
-          <div className="email  small fw-light  mb-3">info@gammallaw.com</div>
+          <a
+            href="mailto:info@gammallaw.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="email text-primary small fw-light  mb-3"
+          >
+            info@gammallaw.com
+          </a>
           <div className="time w-100  small d-flex justify-content-between">
             <span>Sun- Thu </span>
             <span>9:00 am – 6:00 pm</span>
@@ -51,7 +65,14 @@ const ContactInfo = () => {
             <strong>Tel</strong> :{' '}
             <span className="text-primary">+202-35717166</span>
           </p>
-          <div className="email  small fw-light  mb-3">info@gammallaw.com</div>
+          <a
+            href="mailto:info@gammallaw.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="email text-primary small fw-light  mb-3"
+          >
+            info@gammallaw.com
+          </a>
           <div className="time   small d-flex justify-content-start">
             <span>Sun- Thu </span>
             <span>9:00 am – 6:00 pm</span>

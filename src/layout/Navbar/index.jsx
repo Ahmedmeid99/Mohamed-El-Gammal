@@ -20,6 +20,18 @@ const NavItem = ({ text, to, style }) => {
   )
 }
 
+const LinkItem = ({ text, localSection, style }) => {
+  return (
+    <a
+      className={`text-uppercase pt-1 pb-1 ps-3 pe-3 ui-text-200 ${
+        style ?? ''
+      }`}
+      href={localSection}
+    >
+      {text}
+    </a>
+  )
+}
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
@@ -97,7 +109,7 @@ const Navbar = () => {
                     <li>
                       <NavItem
                         text="Legal Opinions And Research"
-                        to="/123our-skills"
+                        to="/legal-opinions"
                         style="pt-3 pb-3 small"
                       />
                     </li>
@@ -147,13 +159,25 @@ const Navbar = () => {
             </li>
 
             <li>
-              <NavItem text="Our Valued Clients" to="/Clients" style="small" />
+              <LinkItem
+                text="Our Valued Clients"
+                localSection="#clients"
+                style="small"
+              />
             </li>
             <li>
-              <NavItem text="Legal opinions" to="/opinions" style=" small" />
+              <LinkItem
+                text="Legal opinions"
+                localSection="#legal-opinions"
+                style=" small"
+              />
             </li>
             <li>
-              <NavItem text="Testimonials" to="/Testimonials" style=" small" />
+              <LinkItem
+                text="Testimonials"
+                localSection="#testimonials"
+                style=" small"
+              />
             </li>
             <li>
               <NavItem text="Contact" to="/Contact" style=" small" />
@@ -192,7 +216,7 @@ const Navbar = () => {
                     <li>
                       <NavItem
                         text="Corporate And Commercial"
-                        to="/123testimonials"
+                        to="#testimonials"
                         style="pt-2 pb-2 "
                       />
                     </li>
@@ -213,7 +237,7 @@ const Navbar = () => {
                     <li>
                       <NavItem
                         text="Legal Opinions And Research"
-                        to="/123our-skills"
+                        to="/legal-opinions"
                         style="pt-2 pb-2 "
                       />
                     </li>
@@ -259,13 +283,16 @@ const Navbar = () => {
                 <NavItem text="Our People" to="/People" />
               </li>
               <li>
-                <NavItem text="Our Valued Clients" to="/Clients" />
+                <LinkItem text="Our Valued Clients" localSection="#clients" />
               </li>
               <li>
-                <NavItem text="Legal opinions" to="/opinions" />
+                <LinkItem
+                  text="Legal opinions"
+                  localSection="#legal-opinions"
+                />
               </li>
               <li>
-                <NavItem text="Testimonials" to="/Testimonials" />
+                <LinkItem text="Testimonials" localSection="#testimonials" />
               </li>
               <li>
                 <NavItem text="Contact" to="/Contact" />

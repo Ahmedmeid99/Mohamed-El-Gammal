@@ -11,7 +11,7 @@ const OurFirm = () => {
   return (
     <div className="our-firm" style={style}>
       <div className="container p-5">
-        <h2 className=" text-center fw-normal fs-1 ui-text-900">OUR FIRM</h2>
+        <h2 className=" text-center fw-normal fs-1 ui-text-900 mb-5">OUR FIRM</h2>
         <section className="text-section">
           <div>
             <strong className="fs-5">Our mission:</strong>

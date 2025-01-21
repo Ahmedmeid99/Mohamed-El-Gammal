@@ -12,8 +12,11 @@ const OurValuedClients = () => {
     cssEase: 'linear',
   }
   return (
-    <section className="section our-valued-clients w-100 pt-5 pb-5">
-      <h2 className="text-white text-center pb-5 ui-fs-large">
+    <section
+      className="section our-valued-clients w-100 pt-5 pb-5"
+      id="clients"
+    >
+      <h2 className="text-white text-center pt-5 pb-5 ui-fs-large fw-normal">
         Our valued clients
       </h2>
       <div className="slider-container container ps-3 pe-3">

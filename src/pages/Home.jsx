@@ -6,6 +6,7 @@ import Testimonials from '../components/Testimonials'
 import Layout from '../layout'
 import Landing from '../layout/Landing'
 import OurFirm from '../components/OurFirm'
+import ContactUs from '../components/ContactUs'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <LegalOpinions />
       <Testimonials />
       <OurFirm />
+      <ContactUs />
     </Layout>
   )
 }

@@ -5,8 +5,11 @@ import { WiStars } from 'react-icons/wi'
 
 const LegalOpinions = () => {
   return (
-    <section className="section legal-opinions w-100 pt-5 pb-5">
-      <h2 className="text-white text-center pb-5 ui-fs-large">
+    <section
+      className="section legal-opinions w-100 pt-5 pb-5"
+      id="legal-opinions"
+    >
+      <h2 className="text-white text-center pb-5 ui-fs-large fw-normal">
         Legal opinions
       </h2>
       <div className="container">
@@ -74,10 +77,12 @@ const LegalOpinions = () => {
         </div>
       </div>
       <div className="feature-contact container d-flex justify-content-center align-items-center flex-column bg-light p-5  rounded-1">
-        <p className='fs-4 ui-text-900 mb-5'>
+        <p className="fs-4 ui-text-900 mb-5">
           If you’d like more information about our features, get in touch today.
         </p>
-        <button className="btn btn-light border border-dark py-2 px-4">Get in Touch</button>
+        <button className="btn btn-light border border-dark py-2 px-4">
+          Get in Touch
+        </button>
       </div>
     </section>
   )

@@ -422,8 +422,8 @@ section.our-people {
 .our-people .img-cover {
   min-width: 12rem;
 }
-.our-people .img-cover img{
-  width: 100%;
+.our-people .img-cover img {
+  width: 100% !important;
 }
 .our-people .translateY-4 {
   position: relative;

@@ -8,7 +8,7 @@ import Landing from '../layout/Landing'
 import OurFirm from '../components/OurFirm'
 import ContactUs from '../components/ContactUs'
 
-const Home = () => {
+const HomePage = () => {
   return (
     <Layout>
       <Landing />
@@ -23,4 +23,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default HomePage

@@ -5,9 +5,9 @@ import {
   Routes, // never render two component in the same time onley the first path
 } from 'react-router-dom'
 
-const Home = React.lazy(() => import('./pages/Home'))
-const ContactUs = React.lazy(() => import('./pages/ContactUs'))
-const OurPeople = React.lazy(() => import('./pages/OurPeople'))
+const HomePage = React.lazy(() => import('./pages/HomePage'))
+const ContactUsPage = React.lazy(() => import('./pages/ContactUsPage'))
+const OurPeoplePage = React.lazy(() => import('./pages/OurPeoplePage'))
 
 function App() {
   return (
@@ -20,9 +20,9 @@ function App() {
         }
       >
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/our-people" element={<OurPeople />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/contact-us" element={<ContactUsPage />} />
+          <Route path="/our-people" element={<OurPeoplePage />} />
 
           {/* <Route path="*" element={<Home />} /> */}
         </Routes>

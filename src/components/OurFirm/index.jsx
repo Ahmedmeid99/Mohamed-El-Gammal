@@ -16,7 +16,7 @@ const OurFirm = () => {
         </h2>
         <section className="text-section">
           <div>
-            <strong className="fs-5">Our mission:</strong>
+            <strong className="fs-5 ui-text-900">Our mission:</strong>
             <p className="fw-normal fs-6 text-custom-spacing">
               To provide you with outstanding, personalized representation and
               effective legal solutions that empowers you to navigate through
@@ -32,7 +32,7 @@ const OurFirm = () => {
         </section>
         <section className="text-section mb-5">
           <div>
-            <strong className="fs-5">Our vision:</strong>
+            <strong className="fs-5 ui-text-900">Our vision:</strong>
             <p className="text-custom-spacing">
               To be more than just a legal office. We strive with every effort
               to build professional relationships with our clients and provide
@@ -55,7 +55,7 @@ const OurFirm = () => {
           </p>
         </section>
         <div className="our-value-section my-2">
-          <strong className="fs-5">Our Values:</strong>
+          <strong className="fs-5 ui-text-900">Our Values:</strong>
           <ul className=" pt-1">
             <li>Integrity & Transparency</li>
             <li>Passion & Innovation</li>

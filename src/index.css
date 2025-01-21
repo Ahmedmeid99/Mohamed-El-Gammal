@@ -72,7 +72,9 @@ body {
   line-height: 1.6;
   color: var(--textColor);
   overflow-x: hidden !important;
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Raleway', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 p,
@@ -139,6 +141,9 @@ textarea {
 
 .ui-bg-200 {
   background-color: var(--primary-200) !important;
+}
+.ui-bg-700 {
+  background-color: var(--primary-700);
 }
 .ui-bg-900 {
   background-color: var(--primary-900) !important;
@@ -234,6 +239,7 @@ header .sm-menu li .active {
 }
 header .menu li > span {
   padding-bottom: 1.9rem !important;
+  padding-right: 2rem !important;
 }
 .sm-menu li a,
 .sm-menu li > span {
@@ -251,7 +257,7 @@ header .menu li > span {
 .drop-down-icon {
   font-size: 2rem;
   position: absolute;
-  right: -10px;
+  right: 0px;
   top: 41%;
   transform: translate(0, -50%);
 }
@@ -413,6 +419,12 @@ section.our-people {
   position: relative;
   z-index: 10;
 }
+.our-people .img-cover {
+  min-width: 12rem;
+}
+.our-people .img-cover img{
+  width: 100%;
+}
 .our-people .translateY-4 {
   position: relative;
   transform: translateY(3rem);
@@ -519,6 +531,11 @@ section.our-people {
   background-color: var(--primary-100);
 }
 
+/* ======================[]========================= */
+.team-members .person-details {
+  flex-basis: 60% !important;
+}
+
 /* =====================[Media Queries]========================== */
 @media (max-width: 1400px) {
 }
@@ -573,8 +590,8 @@ section.our-people {
   }
   .our-firm > .container {
     width: 100% !important;
-    margin:auto !important
-  };
+    margin: auto !important;
+  }
 }
 /* 
 Testimonials  */

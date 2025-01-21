@@ -1,7 +1,7 @@
 const OurPeople = () => {
   return (
     <section className=" our-people pt-5 pb-5">
-      <h2 className="text-center pt-2 pb-2">OUR PEOPLE</h2>
+      <h2 className="text-center pt-2 pb-2 fs-1 fw-normal">OUR PEOPLE</h2>
       <div className="row justify-content-center align-items-center">
         <div className="col d-flex justify-content-center align-items-center  ">
           <div className="translateY-4">
